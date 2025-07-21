@@ -1,0 +1,14 @@
+{
+  "preset": "ts-jest",
+  "testEnvironment": "node",
+  "testPathIgnorePatterns": [
+    "/dist/"
+  ],
+  "moduleNameMapper": {
+    "^petstore_sample_api_ts$": "<rootDir>/src/index.ts",
+    "^petstore_sample_api_ts/(.*)$": "<rootDir>/src/$1"
+  },
+  "setupFilesAfterEnv": [
+    "./jest.setup.js"
+  ]
+}
